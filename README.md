@@ -18,3 +18,8 @@ $localPalette = ColorPalette::GenerateFromLocalImage("MuppetsOfSesameStreet.jpg"
 print_r($localPalette);
 ```
 
+```
+$image_original = file_get_contents('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png');
+$localPalette = ColorPalette::GenerateFromLocalImage($image_original, true);
+print_r($localPalette);
+```
